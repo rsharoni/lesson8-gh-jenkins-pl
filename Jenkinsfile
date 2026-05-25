@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                sh 'touch empty-file.txt'
+                sh 'touch  "$USERPROFILE/Desktop/empty-file.txt"'
                 echo 'Hello from Pipeline!'
             }
         }
